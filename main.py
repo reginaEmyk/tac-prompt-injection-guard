@@ -12,7 +12,7 @@ MODEL_LIMITS = {
 }
 
 st.set_page_config(page_title="Mock Gemini RAG ", layout="wide")
-st.title("💬 Gemini Free-Tier Chat App")
+st.title("💬 Secure RAG Seminar")
 st.caption("Testing against prompt injection for academic purposes")
 
 # Load API key
@@ -175,7 +175,7 @@ if st.button("🚀 Send Request", type="primary", use_container_width=True):
 
 
         # === GUARD: Input Protection Layer ===
-        if guard_input:
+        if guard_input: #checkbox
             safe_prompt, issue = protect_input(full_prompt)
             if issue:
                 st.error(issue)
