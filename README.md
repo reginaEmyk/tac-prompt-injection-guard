@@ -1,16 +1,16 @@
 # BUILD & RUN
-````
+```
 docker build -t gemini-rag-app . && docker run -p 8501:8501 --env-file .env gemini-rag-app
 ```
 # Miscellaneous
 ## Run without Docker
-- install requirements.txt then:
+- install requirements.txt (`pip install -r requirements.txt`) then:
 ```
 streamlit run main.py
 ```
 ## Debug 
 if 
-````
+```
 Failed to import transformers.generation.utils because of the following 
 error (look up to see its traceback):
 numpy.core.multiarray failed to import
