@@ -4,7 +4,7 @@ docker build -t gemini-rag-app . && docker run -p 8501:8501 --env-file .env gemi
 ```
 # Miscellaneous
 ## Run without Docker
-- install requirements.txt (`pip install -r requirements.txt`) then:
+- install requirements.txt (`pip3.10 install -r requirements.txt`) then:
 ```
 streamlit run main.py
 ```
